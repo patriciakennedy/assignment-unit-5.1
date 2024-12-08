@@ -1,4 +1,5 @@
 console.log('***** Object Practice *****')
+// Ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects - PK
 
 // Add the required code to complete the tasks below
 
@@ -10,8 +11,17 @@ console.log('***** Object Practice *****')
 */
 const me = {
   // TODO - add properties here
+
+  firstName: 'Patricia',
+  lastName: 'Kennedy',
+  hasSiblings: true,
+  shoeCount: 1,
+  favThreeFoods: ['Vegetables', 'Seafood', 'Rice'],
+
+
 };
 console.log('A little about me:', me);
+
 
 /* 2. Accessing object properties.
   - Create a variable called fullName 
@@ -20,12 +30,20 @@ console.log('A little about me:', me);
   - Console.log fullName
 */
 
+const fullName = me.firstName + ' ' + me.lastName;
+console.log(fullName);
+
 
 
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
+
+console.log(me.favThreeFoods[0]);
+console.log(me.favThreeFoods[me.favThreeFoods.length -1]);
+
+
 
 
 
